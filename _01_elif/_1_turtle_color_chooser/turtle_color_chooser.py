@@ -3,6 +3,7 @@ import turtle
 from tkinter import simpledialog
 
 
+
 # Returns a random color!
 def get_random_color():
     return "#%06X" % (random.randint(0, 0xFFFFFF))
