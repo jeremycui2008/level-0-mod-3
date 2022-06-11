@@ -13,6 +13,12 @@ def get_random_color():
 if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
+    bill=turtle.Turtle()
+    for i in range (4):
+        bill.forward(150)
+        bill.left(90)
+
+
 
     # TODO 1) Create a new Turtle
     #      2) Make the turtle draw a shape (this will take more than one line
