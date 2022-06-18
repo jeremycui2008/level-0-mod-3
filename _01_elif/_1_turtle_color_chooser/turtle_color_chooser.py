@@ -15,11 +15,28 @@ if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
     bill=turtle.Turtle()
-    for i in range (4):
-        bill.forward(150)
-        bill.left(90)
-
-
+    bill.pensize(10)
+    for ix in range (1000):
+        for i in range (4):
+            bill.forward(150)
+            bill.left(90)
+        rob= simpledialog.askstring(title='color', prompt='what color you want')
+        if rob=='brown':
+            bill.pencolor('brown')
+        elif rob=='purple':
+            bill.pencolor('purple')
+        elif rob=='green':
+            bill.pencolor('green')
+        elif rob=='yellow':
+            bill.pencolor('yellow')
+        elif rob=='blue':
+            bill.pencolor('blue')
+        elif rob=='red':
+            bill.pencolor('red')
+        elif rob=='black':
+            bill.pencolor('black')
+        else:
+            bill.pencolor(get_random_color())
 
     # TODO 1) Create a new Turtle
     #      2) Make the turtle draw a shape (this will take more than one line
