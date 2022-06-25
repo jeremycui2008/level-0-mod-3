@@ -11,4 +11,8 @@ if __name__ == '__main__':
         messagebox.showinfo(title='nice',message='keep doing what you are doing')
     elif rob=='no':
         kyle=simpledialog.askstring(title='you ok?',prompt='do you want to be happy?')
+    if kyle=='yes':
+        messagebox.showinfo(title=':(',message='change something')
+    elif kyle=='no':
+        messagebox.showinfo(title='awwwwww', message="keep doing whatever you're doing")
     pass
