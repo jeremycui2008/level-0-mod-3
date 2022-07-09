@@ -1,19 +1,14 @@
-def setup():
-     ellipseMode(CENTER)
-     size(500, 500)
-     background(160, 160, 160)
-     draw_flower(350, 100)
-
-
-def draw():
-    
-    # First run the program and you should see a flower.  
-  
-  
-    # Then, use a loop to make a body for the Bee! 
+# Then, use a loop to make a body for the Bee!
     # (see the image on the recipe, it's a diagonal line of circles)
     # Use modulo to make the colors alternate between yellow and black
-    
+    x=10
+    y=10
+    for i in range (50):
+        if i % 2==0:
+            fill('#080808')
+            ellipse(x,y,30,30)
+            x+=11
+            y+=11
 
 
 
